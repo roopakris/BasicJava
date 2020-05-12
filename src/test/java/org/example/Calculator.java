@@ -19,12 +19,13 @@ public class Calculator {
         System.out.println("2. Subtract");
         System.out.println("3. Division");
         System.out.println("4. Multiplication");
-        System.out.println("5. Exit");
+        System.out.println("5. percentage");
+        System.out.println("6. EXIT");
 
         //System.out.println("Your Numbers : "+num1+""+num2);
 
         do{
-            System.out.println("Enter your option 1 to 4 or 5 to exit");
+            System.out.println("Enter your option 1 to 5 or 6 to exit");
             option= input.nextInt();
 
             switch (option){
@@ -59,12 +60,19 @@ public class Calculator {
                     System.out.println("multiplication of 2 numbers "+(num1*num2));
                     break;
 
+                case 5:
+                    System.out.println("percentage");
+                    System.out.println("Enter decimal number that you want to perform");
+                    num1=input.nextDouble();
+                    System.out.println("percentage of " +num1+ " is="+ num1*100+"%");
+                    break;
+
 
 
             }
 
 
-        }while(option !=5);
+        }while(option !=6);
 
         System.out.println("Thank you for using calculator program");
 
